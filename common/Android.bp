@@ -1,0 +1,25 @@
+
+soong_namespace {
+}
+
+android_app_import {
+        name: "RuStore",
+        owner: "vk",
+        apk: "apks/RuStore.apk",
+        presigned: true,
+        dex_preopt: {
+                enabled: false,
+        },
+        product_specific: true,
+}
+
+android_app_import {
+        name: "YandexWeather",
+        owner: "intertechservicesag",
+        apk: "apks/ru.yandex.weatherplugin.apk",
+        presigned: true,
+        dex_preopt: {
+                enabled: false,
+        },
+        product_specific: true,
+}
